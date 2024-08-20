@@ -1,0 +1,79 @@
+@import url('https://fonts.cdnfonts.com/css/new-super-mario-font-u');
+#suggestions {
+  position: absolute;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure it's above other content */
+  max-height: 200px; /* Set a max height */
+  overflow-y: auto; /* Add scrollbar if needed */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+}
+
+/* Style for each suggestion item */
+#suggestions div {
+  padding: 8px 12px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Hover effect for suggestion items */
+#suggestions div:hover {
+  background-color: #f0f0f0;
+}
+
+/* Optional: style for the input field to make sure it looks nice with the suggestion box */
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+p {
+  /* text-shadow: black 0px 0px 10px; */
+
+}
+
+
+body {
+    background: url(https://img.freepik.com/free-psd/weather-background-with-clouds_23-2150374514.jpg?t=st=1723705460~exp=1723709060~hmac=1f9fef6314c9e035080863cc68d1e5350b1e8e1d8fd2b2b4aa86ba9ec31b764d&w=740);
+    /* background: url(https://img.freepik.com/free-psd/3d-background-with-podium-monsoon-season-sales_23-2150323222.jpg?t=st=1723704765~exp=1723708365~hmac=172a89c8c8a817ca4d5cb7bc3a69b906b7af9853be2892c504e7052955bb497a&w=740); */
+    /* background-size: contain; */
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image within the element */
+    background-position: center top;
+  }
+* {
+  font-family: 'New Super Mario Font U', sans-serif;
+  text-align: center;
+  
+  }
+.container_forecast{
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to wrap to the next line if there isn't enough space */
+  gap: 10px; /* Adjust the gap between cards as needed */
+}
+
+/* Style the counter cards */
+.card {
+  margin-top: 10px;
+  border: 1px solid #682c2c;
+  padding: 10px;
+  border-radius: 5px;
+  flex: auto;
+  text-align: center;
+  color: black;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
